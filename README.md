@@ -4,6 +4,7 @@ react-dynamic-breadcumb helps to create breadcrumb dynamically independent to ro
 Simply wrap your code around `<BreadProvider />`, add `<BreadCrumb />` where you want to dispaly breadcrumb and add `<BreadcrumbItem />` in each page.
 
 ## Demo
+(https://isaurssaurav.github.io/react-dynamic-breadcrumb/)[Click Here]
 
 ## Installation
 ```
