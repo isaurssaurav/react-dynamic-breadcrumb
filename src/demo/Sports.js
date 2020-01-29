@@ -4,7 +4,7 @@ import { BreadcrumbItem } from '../index'
 function Sports() {
     return (
         <>
-            <BreadcrumbItem to="/" >Home</BreadcrumbItem>
+            <BreadcrumbItem to="/react-dynamic-breadcrumb" >Home</BreadcrumbItem>
             <BreadcrumbItem to="" >Sports</BreadcrumbItem>
 
             This is Sports page

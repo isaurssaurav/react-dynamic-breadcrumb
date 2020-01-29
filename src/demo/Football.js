@@ -4,8 +4,8 @@ import { BreadcrumbItem } from '../index'
 function Football() {
     return (
         <>
-            <BreadcrumbItem to="/" >Home</BreadcrumbItem>
-            <BreadcrumbItem to="/sports" >Sports</BreadcrumbItem>
+            <BreadcrumbItem to="/react-dynamic-breadcrumb" >Home</BreadcrumbItem>
+            <BreadcrumbItem to="/react-dynamic-breadcrumb/sports" >Sports</BreadcrumbItem>
             <BreadcrumbItem  >Football</BreadcrumbItem>
 
 

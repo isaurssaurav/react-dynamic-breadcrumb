@@ -5,7 +5,7 @@ function Usage() {
 
     return (
         <>
-            <BreadcrumbItem to="/" >Home</BreadcrumbItem>
+            <BreadcrumbItem to="/react-dynamic-breadcrumb" >Home</BreadcrumbItem>
             <BreadcrumbItem  >Usage</BreadcrumbItem>
 
             <p><a href="https://github.com/isaurssaurav/react-dynamic-breadcrumb#usage">Click Here</a> to see how to use this package.</p>

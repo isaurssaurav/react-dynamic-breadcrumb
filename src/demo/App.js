@@ -25,16 +25,16 @@ function App() {
                                     <Link to="/" >home</Link> */}
 
                                     <Switch>
-                                        <Route exact path="/" exact >
+                                        <Route exact path="/react-dynamic-breadcrumb/" exact >
                                             <Home />
                                         </Route>
-                                        <Route path="/sports" exact >
+                                        <Route path="/react-dynamic-breadcrumb/sports" exact >
                                             <Sports />
                                         </Route>
-                                        <Route path="/sports/football" >
+                                        <Route path="/react-dynamic-breadcrumb/sports/football" >
                                             <Football />
                                         </Route>
-                                        <Route path="/usage" >
+                                        <Route path="/react-dynamic-breadcrumb/usage" >
                                             <Usage />
                                         </Route>
                                     </Switch>
