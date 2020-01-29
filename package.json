@@ -1,0 +1,50 @@
+{
+  "name": "react-dynamic-breadcrumb",
+  "version": "0.0.1",
+  "description": "Dynamic breadcrumbs for React.js, small and easy to use.",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "webpack --config ./webpack.config.dev.js --mode development && webpack-dev-server --config ./webpack.config.dev.js",
+    "build": "node_modules/.bin/babel src -d dist"
+  },
+  "keywords": [
+    "breadcrumb",
+    "react",
+    "reactjs",
+    "react-through",
+    "dynamic"
+  ],
+  "author": "isaurssaurav",
+  "license": "ISC",
+  "dependencies": {
+    "react-through": "^1.1.4"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": "^16.12.0",
+    "react-router-dom": "^5.1.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.7",
+    "@babel/core": "^7.7.7",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/plugin-proposal-decorators": "^7.7.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "@babel/preset-react": "^7.7.4",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.4.1",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "html-webpack-plugin": "^3.2.0",
+    "i": "^0.3.6",
+    "npm": "^6.13.4",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-router-dom": "^5.1.2",
+    "style-loader": "^1.1.2",
+    "webpack": "^4.41.4",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
+  }
+}

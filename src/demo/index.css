@@ -1,0 +1,385 @@
+.dynamic-bread-crumb ul{
+    list-style: none;
+    display: flex;
+    font-size: 16px;
+}
+
+.dynamic-bread-crumb ul li span.separator{
+padding: 0 8px;
+color:#d2ceaf;
+}
+
+.dynamic-bread-crumb ul li a:hover{ 
+    color:black;
+    text-decoration: none;
+    transform: scale(1.2);
+}
+
+.dynamic-bread-crumb ul li a{
+    color: #d2ceaf;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.dynamic-bread-crumb ul li a.disable{
+    pointer-events: none;
+}
+
+
+.dynamic-bread-crumb ul li:last-child a{
+    color:rgb(5, 7, 12)
+}
+
+
+
+body {
+    overflow: hidden;
+  color: #000;
+  font: 15px/1.7 "Hiragino Kaku Gothic Pro", sans-serif;
+  background-color: #f5f5f5;
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+}
+ul{
+    list-style: none;
+    padding-left: 0;
+}
+/*** base */
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  font-size: 13px;
+  background:blueviolet;
+}
+
+.contents {
+  width: 100%;
+  height: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contents__inner {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px 24px;
+  color: #fff;
+}
+.contents__inner h1 {
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/*** menu */
+/*-------------------------
+カスタム
+-------------------------*/
+@media only screen and (max-width: 640px) {
+  .menu {
+    flex-direction: column;
+    display: none;
+    opacity: 0;
+    transition: .5s;
+  }
+  .menu.open {
+    display: block;
+    opacity: 1;
+    transition: .5s;
+  }
+
+  .mod__trg {
+    width: 30px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    right: 14px;
+    top: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  .mod__trg i {
+    display: block;
+    width: 20px;
+    height: 2px;
+    border-radius: 3px;
+    background: #000;
+    transition: background 0.5s;
+    position: relative;
+    left: 5px;
+    top: 14px;
+  }
+  .mod__trg i:before, .mod__trg i:after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    border-radius: 3px;
+    background: #000;
+    position: absolute;
+    transform: rotate(0deg);
+    transition: all 0.3s !important;
+  }
+  .mod__trg i:before {
+    transform: translateY(8px);
+  }
+  .mod__trg i:after {
+    transform: translateY(-8px);
+  }
+  .mod__trg.is-open i {
+    background: #fff;
+  }
+  .mod__trg.is-open i:after {
+    transform: translateY(0px) rotate(-45deg);
+  }
+  .mod__trg.is-open i:before {
+    transform: translateY(0px) rotate(45deg);
+  }
+}
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.menu {
+  display: none;
+}
+
+.menu.open {
+  display: block;
+  animation: show .3s linear 0s;
+}
+
+.menu {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  max-width: 1000px;
+  display: flex;
+  margin: 0 auto;
+}
+.menu > li {
+  flex: 1 1 auto;
+  height: 50px;
+  line-height: 50px;
+  background: #0000004d;
+}
+.menu > li a {
+  color: #fff;
+}
+.menu > li a:hover {
+  color: #999;
+}
+
+.menu__none:hover,
+.menu__multi:hover,
+.menu__mega:hover,
+.menu__single:hover {
+  background: #072A24;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+
+.menu__second-level li,
+.menu__third-level li {
+  border-top: 1px solid #111;
+}
+
+.menu__second-level li a:hover {
+  background: #111;
+}
+
+.menu__third-level li a:hover {
+  background: #2a1f1f;
+}
+
+.menu__fourth-level li a:hover {
+  background: #1d0f0f;
+}
+
+.init-bottom:after {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0 0 0 15px;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.menu {
+  *zoom: 1;
+}
+.menu:before {
+  content: "";
+  display: table;
+}
+.menu:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.menu > .menu__single {
+  position: relative;
+}
+
+/**
+ * single menu
+ */
+.menu__single .menu__second-level {
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  background: #072A24;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+  visibility: hidden;
+  opacity: 0;
+}
+.menu__single:hover > .menu__second-level {
+  top: 50px;
+  visibility: visible;
+  opacity: 1;
+}
+
+/**
+ * multi menu
+ */
+.menu > .menu__multi {
+  position: relative;
+}
+
+.menu__multi .menu__second-level {
+  position: absolute;
+  top: 40px;
+  width: 100%;
+  background: #072A24;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1;
+}
+.menu__multi:hover .menu__second-level {
+  top: 50px;
+  visibility: visible;
+  opacity: 1;
+}
+.menu__multi .menu__second-level li {
+  position: relative;
+}
+.menu__multi .menu__second-level li:hover {
+  background: #111;
+}
+.menu__multi .menu__second-level li .menu__third-level {
+  position: absolute;
+  top: -1px;
+  left: 100%;
+  width: 100%;
+  background: #111;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  visibility: hidden;
+  opacity: 0;
+}
+.menu__multi .menu__second-level li:hover .menu__third-level {
+  visibility: visible;
+  opacity: 1;
+}
+.menu__multi .menu__second-level li .menu__third-level li {
+  position: relative;
+}
+.menu__multi .menu__second-level li .menu__third-level li:hover {
+  background: #2a1f1f;
+}
+.menu__multi .menu__second-level li .menu__third-level li .menu__fourth-level {
+  position: absolute;
+  top: -1px;
+  left: 100%;
+  width: 100%;
+  background: #2a1f1f;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  visibility: hidden;
+  opacity: 0;
+}
+.menu__multi .menu__second-level li .menu__third-level li:hover .menu__fourth-level {
+  visibility: visible;
+  opacity: 1;
+}
+
+.init-right:after {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0 0 0 15px;
+  border-right: 1px solid #fff;
+  border-top: 1px solid #fff;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/**
+ * mega menu
+ */
+.menu__mega .menu__second-level {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px 2%;
+  background: #072A24;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1;
+}
+.menu__mega:hover .menu__second-level {
+  top: 50px;
+  visibility: visible;
+  opacity: 1;
+}
+.menu__mega .menu__second-level > li {
+  float: left;
+  width: 32%;
+  border: none;
+}
+.menu__mega .menu__second-level > li:nth-child(3n+2) {
+  margin: 0 1%;
+}
+
+
+#ham-menu:hover {
+  transform: translate(-300px);
+}
+#ham-menu:hover + #menu-background {
+  opacity: 0.5;
+  z-index: 999;
+}
+
+.footer {
+    text-align: center;
+  color: #999;
+    position: absolute;
+    width: 100%;
+    bottom: 9px;
+
+}
+.footer a {
+  color: #999;
+}
+
+

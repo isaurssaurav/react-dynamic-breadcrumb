@@ -1,0 +1,30 @@
+.dynamic-bread-crumb ul{
+    list-style: none;
+    display: flex;
+}
+
+.dynamic-bread-crumb ul li span.separator{
+padding: 0 8px;
+color: #b6ceff;
+}
+
+.dynamic-bread-crumb ul li a:hover{ 
+    color:black;
+    text-decoration: none;
+    transform: scale(1.2);
+}
+
+.dynamic-bread-crumb ul li a{
+    color: #b6ceff;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.dynamic-bread-crumb ul li a.disable{
+    pointer-events: none;
+}
+
+
+.dynamic-bread-crumb ul li:last-child a{
+    color:#527cff;
+}
