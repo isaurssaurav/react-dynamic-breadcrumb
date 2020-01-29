@@ -65,3 +65,5 @@ export default Football;
 
 
 ## LICENSE
+
+#### [MIT](./LICENSE.md)
