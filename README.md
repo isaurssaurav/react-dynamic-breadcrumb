@@ -19,7 +19,7 @@ For example:
 import { BreadProvider } from 'react-dynamic-breadcrumb';
 import { BrowserRouter } from 'react-router-dom'; 
 
-import "react-dynamic-breadcrumb/index.css"
+import "react-dynamic-breadcrumb/dist/index.css"; // or you can customize your own
 
 ReactDOM.render(
 <BrowserRouter> 
