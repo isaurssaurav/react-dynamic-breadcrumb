@@ -60,7 +60,8 @@ export default Football;
 
 | Name                | Type     | Default   | Description                                                          |
 | ------------------- | -------- | --------- | -------------------------------------------------------------------- |
-| `separator`       | string / html element   |    |  **Required.**  |
+| separator       | string / html element   |    |  **Required.**  |
+| containerClassName| string |  dynamic-bread-crumb|  wrapper class outside breadcrumb|
 
 
 ## LICENSE
