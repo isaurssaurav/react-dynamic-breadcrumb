@@ -1,6 +1,6 @@
 {
   "name": "react-dynamic-breadcrumb",
-  "version": "0.0.2",
+  "version": "0.0.5",
   "description": "Dynamic breadcrumbs for React.js, small and easy to use.",
   "main": "dist/index.js",
   "scripts": {
@@ -16,8 +16,17 @@
     "dynamic"
   ],
   "files": [
-    "dist"
+    "dist",
+    "dist/lib",
+    "dist/BProvider.js",
+    "dist/BreadCrumb.js",
+    "dist/BreadCrumbItem.js",
+    "dist/index.css"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/isaurssaurav/react-dynamic-breadcrumb"
+  },
   "author": "isaurssaurav",
   "license": "ISC",
   "dependencies": {
