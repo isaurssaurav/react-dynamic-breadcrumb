@@ -15,6 +15,9 @@
     "react-through",
     "dynamic"
   ],
+  "files": [
+    "dist"
+  ],
   "author": "isaurssaurav",
   "license": "ISC",
   "dependencies": {
