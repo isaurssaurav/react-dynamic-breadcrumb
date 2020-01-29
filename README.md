@@ -24,14 +24,14 @@ ReactDOM.render(
 ```
 
 ##### 2. Add BreadCrumb where you want to show your breadcrumb
-For exampel in header:
+For example in header:
 ```js
 import React from 'react';
 import { Breadcrumb } from 'react-dynamic-breadcrumb';
 
 export default function Header() {
     return (
-            <Breadcrumb containerClassName="dynamic-bread-crumb" seperator="<strong>/</strong>" />
+            <Breadcrumb containerClassName="dynamic-bread-crumb" separator="<strong>/</strong>" />
 
     )
 }

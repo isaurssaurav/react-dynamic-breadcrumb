@@ -6,6 +6,7 @@ import { BrowserRouter, Switch, Route, Link } from 'react-router-dom'
 import Home from './Home';
 import NavBar from './Navbar';
 import Football from './Football';
+import Usage from './Usage';
 
 function App() {
     return (
@@ -32,6 +33,9 @@ function App() {
                                         </Route>
                                         <Route path="/sports/football" >
                                             <Football />
+                                        </Route>
+                                        <Route path="/usage" >
+                                            <Usage />
                                         </Route>
                                     </Switch>
 

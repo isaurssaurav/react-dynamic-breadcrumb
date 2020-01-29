@@ -24,7 +24,7 @@ function NavBar() {
 
 
 
-                    <li className="menu__none"><Link to="/">Usage</Link></li>
+                    <li className="menu__none"><Link to="/usage">Usage</Link></li>
 
 
 
