@@ -12,7 +12,7 @@ const Home = () => {
             <p>
                 This package helps to create breadcrumb dynamically independent to routes.
             </p>
-            <p>Click Here to see how to use this package.</p>
+
         </>
     )
 }

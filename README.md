@@ -15,6 +15,7 @@ $ npm install react-dynamic-breadcumb
 For example:
 ```js
 import { BreadProvider } from 'react-dynamic-breadcrumb';
+import "react-dynamic-breadcrumb/index.css"
 
 ReactDOM.render(
 <BreadProvider>
@@ -61,7 +62,7 @@ export default Football;
 | Name                | Type     | Default   | Description                                                          |
 | ------------------- | -------- | --------- | -------------------------------------------------------------------- |
 | separator       | string / html element   |    |  **Required.**  |
-| containerClassName| string |  dynamic-bread-crumb|  wrapper class outside breadcrumb|
+| containerClassName| string |  dynamic-bread-crumb|  wrapper class outside breadcrumb. (for CSS!!)|
 
 
 ## LICENSE
