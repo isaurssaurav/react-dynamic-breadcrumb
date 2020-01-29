@@ -37744,14 +37744,14 @@ function App() {
     className: "contents__inner"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "isaurssaurav / \u53CD\u5E94-\u52A8\u6001-\u9762\u5305\u5C51"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Navbar__WEBPACK_IMPORTED_MODULE_6__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Header__WEBPACK_IMPORTED_MODULE_2__["default"], null), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Switch"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Route"], _defineProperty({
     exact: true,
-    path: "/"
+    path: "/react-dynamic-breadcrumb/"
   }, "exact", true), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Home__WEBPACK_IMPORTED_MODULE_5__["default"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Route"], {
-    path: "/sports",
+    path: "/react-dynamic-breadcrumb/sports",
     exact: true
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Sports__WEBPACK_IMPORTED_MODULE_3__["default"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Route"], {
-    path: "/sports/football"
+    path: "/react-dynamic-breadcrumb/sports/football"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Football__WEBPACK_IMPORTED_MODULE_7__["default"], null)), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["Route"], {
-    path: "/usage"
+    path: "/react-dynamic-breadcrumb/usage"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Usage__WEBPACK_IMPORTED_MODULE_8__["default"], null)))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: "footer"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "saurssaurav33@gmail.com"))))));
@@ -37778,9 +37778,9 @@ __webpack_require__.r(__webpack_exports__);
 
 function Football() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_index__WEBPACK_IMPORTED_MODULE_1__["BreadcrumbItem"], {
-    to: "/"
+    to: "/react-dynamic-breadcrumb"
   }, "Home"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_index__WEBPACK_IMPORTED_MODULE_1__["BreadcrumbItem"], {
-    to: "/sports"
+    to: "/react-dynamic-breadcrumb/sports"
   }, "Sports"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_index__WEBPACK_IMPORTED_MODULE_1__["BreadcrumbItem"], null, "Football"), "This is Football page");
 }
 
@@ -37862,7 +37862,7 @@ function NavBar() {
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
     className: "menu__none"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "/"
+    to: "/react-dynamic-breadcrumb"
   }, "React Dynamic BreadCrumb")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
     className: "menu__multi"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
@@ -37871,16 +37871,16 @@ function NavBar() {
   }, "Pages"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
     className: "menu__second-level"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "/sports",
+    to: "/react-dynamic-breadcrumb/sports",
     className: "init-right"
   }, "Sports"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", {
     className: "menu__third-level"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "/sports/football"
+    to: "/react-dynamic-breadcrumb/sports/football"
   }, "Football")))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("li", {
     className: "menu__none"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
-    to: "/usage"
+    to: "/react-dynamic-breadcrumb/usage"
   }, "Usage")))));
 }
 
@@ -37905,7 +37905,7 @@ __webpack_require__.r(__webpack_exports__);
 
 function Sports() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_index__WEBPACK_IMPORTED_MODULE_1__["BreadcrumbItem"], {
-    to: "/"
+    to: "/react-dynamic-breadcrumb"
   }, "Home"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_index__WEBPACK_IMPORTED_MODULE_1__["BreadcrumbItem"], {
     to: ""
   }, "Sports"), "This is Sports page");
@@ -37932,7 +37932,7 @@ __webpack_require__.r(__webpack_exports__);
 
 function Usage() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_index__WEBPACK_IMPORTED_MODULE_1__["BreadcrumbItem"], {
-    to: "/"
+    to: "/react-dynamic-breadcrumb"
   }, "Home"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_index__WEBPACK_IMPORTED_MODULE_1__["BreadcrumbItem"], null, "Usage"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "https://github.com/isaurssaurav/react-dynamic-breadcrumb#usage"
   }, "Click Here"), " to see how to use this package."));
